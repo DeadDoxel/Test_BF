@@ -14,7 +14,7 @@
                lastName: $('#lastName').val(),
                phone: $('#phone').val()
             };
-           var auto = $('#checkbox').is(':checked'); //проверка
+           var auto = $('#recurrent').is(':checked'); //проверка
            if (auto) { //включаем подписку
                data.CloudPayments = {
                    recurrent: { interval: 'Month', period: 1 } //один раз в месяц начиная со следующего месяца
